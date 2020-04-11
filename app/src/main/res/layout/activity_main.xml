@@ -14,14 +14,15 @@
         android:layout_height="85dp"
         android:layout_marginTop="0dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/web_hi_res_512"
+        app:srcCompat="@drawable/ic_launcher"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textCar"
+        android:textColor="#ffff"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_car"
@@ -42,6 +43,8 @@
 
     <TextView
         android:id="@+id/textViewBrand"
+        android:textColor="#ffff"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_brand"
@@ -65,6 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/type_car"
+        android:textColor="#ffff"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editTextBrand" />
@@ -74,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -81,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewCarType" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/search_button"

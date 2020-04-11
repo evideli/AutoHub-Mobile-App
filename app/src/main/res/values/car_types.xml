@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_types">
+        <item>(all)</item>
+        <item>Small</item>
+        <item>Mid-Compact</item>
+        <item>Compact</item>
+        <item>Sedan</item>
+        <item>Small-SUV</item>
+        <item>Compact-SUV</item>
+        <item>Mid-Size SUV</item>
+        <item>Grand Suv</item>
+        <item>Limousine</item>
+        <item>Jeep</item>
+        <item>Station Vagon</item>
+        <item>Mini-Van</item>
+    </string-array>
+</resources>

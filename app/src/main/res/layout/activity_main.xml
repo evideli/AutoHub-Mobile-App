@@ -5,84 +5,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/car5"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="600dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/web_hi_res_512"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/textCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_car"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="403dp"
-            android:layout_height="107dp"
-            app:srcCompat="@drawable/web_hi_res_512" />
+    <EditText
+        android:id="@+id/editTextCar"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textCar" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="175dp"
-            tools:layout_editor_absoluteY="107dp" />
+    <TextView
+        android:id="@+id/textViewBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_brand"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCar" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="98dp"
-            tools:layout_editor_absoluteY="132dp" />
+    <EditText
+        android:id="@+id/editTextBrand"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBrand" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="170dp"
-            tools:layout_editor_absoluteY="183dp" />
+    <TextView
+        android:id="@+id/textViewCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_car"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBrand" />
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="98dp"
-            tools:layout_editor_absoluteY="201dp" />
+    <Spinner
+        android:id="@+id/action_bar_spinnerCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCarType" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="170dp"
-            tools:layout_editor_absoluteY="246dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="98dp"
-            tools:layout_editor_absoluteY="278dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="170dp"
-            tools:layout_editor_absoluteY="469dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="60dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

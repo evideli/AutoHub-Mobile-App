@@ -22,10 +22,10 @@
     <TextView
         android:id="@+id/textCar"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
         android:text="@string/label_car"
         android:textColor="#ffff"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -33,7 +33,7 @@
     <EditText
         android:id="@+id/editTextCar"
         android:layout_width="210dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:text="@string/label_brand"
         android:textColor="#ffff"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editTextCar" />
@@ -55,7 +56,7 @@
     <EditText
         android:id="@+id/editTextBrand"
         android:layout_width="210dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -69,6 +70,7 @@
         android:layout_height="wrap_content"
         android:text="@string/type_car"
         android:textColor="#ffff"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editTextBrand" />
@@ -91,6 +93,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:text="@string/search_button"
+        android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.495"

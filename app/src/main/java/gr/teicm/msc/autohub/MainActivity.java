@@ -2,6 +2,9 @@ package gr.teicm.msc.autohub;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ListActivity;
+import android.content.Intent;
 import android.view.MenuInflater;
 import android.os.Bundle;
 import android.view.Menu;
@@ -46,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 String car = textCar.getText().toString();
                 String car_type = spinnerCarType.getSelectedItem().toString();
                 String message = String.format("Brand: %s\nCar: %s\nCar Type: %s", brand, car, car_type);
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, CarList.class);
+                startActivity(intent);
             }
         });
     }

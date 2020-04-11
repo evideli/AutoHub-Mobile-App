@@ -4,4 +4,6 @@
     <string name="label_car">Car</string>
     <string name="type_car">Select Car Type</string>
     <string name="search_button">Search!</string>
+    <string name="about">About...</string>
+
 </resources>

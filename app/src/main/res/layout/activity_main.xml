@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_width="205dp"
         android:layout_height="85dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,11 +21,11 @@
 
     <TextView
         android:id="@+id/textCar"
-        android:textColor="#ffff"
-
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:text="@string/label_car"
+        android:textColor="#ffff"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -43,11 +43,11 @@
 
     <TextView
         android:id="@+id/textViewBrand"
-        android:textColor="#ffff"
-
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:text="@string/label_brand"
+        android:textColor="#ffff"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editTextCar" />
@@ -78,9 +78,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textColor="#ffff"
         android:inputType="textPersonName"
         android:text=""
+        android:textColor="#ffff"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textViewCarType" />
@@ -89,10 +89,14 @@
         android:id="@+id/buttonSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/search_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_spinnerCarType"
+        app:layout_constraintVertical_bias="0.841" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -107,4 +111,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="60dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

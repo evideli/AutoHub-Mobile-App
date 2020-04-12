@@ -23,7 +23,7 @@ public class CarList extends AppCompatActivity {
                 //
                 // Code will run on Button Click
                 //
-                Intent intent = new Intent(CarList.this, MainActivity.class);
+                Intent intent = new Intent(CarList.this, HomePage.class);
                 startActivity(intent);
             }
         });

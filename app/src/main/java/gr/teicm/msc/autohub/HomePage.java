@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import gr.teicm.msc.autohub.classes.DataStore;
+
 public class HomePage extends AppCompatActivity {
 
     private EditText textBrand;
@@ -31,6 +33,8 @@ public class HomePage extends AppCompatActivity {
         spinnerCarType = (Spinner) findViewById(R.id.action_bar_spinnerCarType);
         Button buttonSearch = (Button) findViewById(R.id.buttonSearch);
 
+        DataStore.Init(getApplicationContext());
+
         ArrayAdapter<CharSequence> cartypeAdapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.car_types,
@@ -42,14 +46,16 @@ public class HomePage extends AppCompatActivity {
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //
-                // Code will run on Button Click
-                //
+
                 String brand = textBrand.getText().toString();
                 String car = textCar.getText().toString();
-                String car_type = spinnerCarType.getSelectedItem().toString();
-                String message = String.format("Brand: %s\nCar: %s\nCar Type: %s", brand, car, car_type);
+                int filter_car_type = spinnerCarType.getSelectedItemPosition();
+
+                String message = String.format("Brand: %s\nCar: %s\nCar Type: %s", brand, car, filter_car_type);
                 Intent intent = new Intent(HomePage.this, CarList.class);
+                intent.putExtra("AUTHOR", brand);
+                intent.putExtra("TITLE", car);
+                intent.putExtra("GENREID", filter_car_type);
                 startActivity(intent);
             }
         });

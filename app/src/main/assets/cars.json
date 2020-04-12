@@ -1,0 +1,52 @@
+{
+  "Cars": [
+    {
+      "ID": 1,
+      "TITLE": "The Closed Circle",
+      "AUTHOR": "Jonathan Coe",
+      "GENREID": 2,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/0670892548/ref=s9_qpp_gw_p14_d99_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/51FG50YXZ6L.jpg"
+    },
+    {
+      "ID": 2,
+      "TITLE": "The Little Red Chairs",
+      "AUTHOR": "Edna O'Brien",
+      "GENREID": 2,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/057131628X/ref=s9_qpp_gw_p14_d99_i6?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/51r1ToSAS1L.jpg"
+    },
+    {
+      "ID": 3,
+      "TITLE": "T. S. Eliot The Poems Volume One",
+      "AUTHOR": "T. S. Eliot",
+      "GENREID": 13,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/057123870X/ref=s9_qpp_gw_p14_d99_i12?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/51XoshEXVEL.jpg"
+    },
+    {
+      "ID": 4,
+      "TITLE": "Oxford School Dictionary",
+      "AUTHOR": "Oxford Dictionaries",
+      "GENREID": 7,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/0192756931/ref=s9_qpp_gw_p14_d99_i14?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/71a3Fo6HO3L.jpg"
+    },
+    {
+      "ID": 5,
+      "TITLE": "The Noise of Time",
+      "AUTHOR": "Julian Barnes",
+      "GENREID": 2,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/1910702609/ref=s9_qpp_gw_p14_d99_i11?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/51wBPUwJ9ML.jpg"
+    },
+    {
+      "ID": 6,
+      "TITLE": "Sweet Tooth",
+      "AUTHOR": "Ian McEwan",
+      "GENREID": 2,
+      "AMAZONURL": "http://www.amazon.co.uk/gp/product/0099578786/ref=s9_qpp_gw_p14_d99_i18?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
+      "COVERURL": "http://ecx.images-amazon.com/images/I/51VpJUj7QlL.jpg"
+    }
+  ]
+}

@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <GridView
+        android:id="@+id/gridViewCars"
         android:layout_width="409dp"
         android:layout_height="596dp"
         app:layout_constraintEnd_toEndOf="parent"

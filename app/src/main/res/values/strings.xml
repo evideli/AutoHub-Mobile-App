@@ -5,5 +5,7 @@
     <string name="type_car">Select Car Type</string>
     <string name="search_button">Search!</string>
     <string name="about">About...</string>
+    <string name="moto">It\'s about time to get a new perspective on Cars.</string>
+    <string name="welcome">Welcome to Autohub</string>
 
 </resources>

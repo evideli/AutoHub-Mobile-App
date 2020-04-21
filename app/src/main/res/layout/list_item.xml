@@ -6,12 +6,12 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="133dp"
+        android:layout_height="76dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_back_black_48dp" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -21,20 +21,20 @@
         android:layout_marginTop="10dp">
         <!-- Name Label -->
         <TextView
-            android:id="@+id/book_item_title"
+            android:id="@+id/car_item_title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="#dc6800"
+            android:textColor="@color/primary_dark"
             android:textSize="16sp"
             android:textStyle="bold"
             android:paddingTop="6dip"
             android:paddingBottom="2dip" />
         <!-- Description label -->
         <TextView
-            android:id="@+id/book_item_author"
+            android:id="@+id/car_item_author"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="#5d5d5d"
+            android:textColor="@color/secondary_text"
             android:textStyle="bold"
             android:paddingBottom="2dip">
         </TextView>
@@ -53,7 +53,7 @@
             </TextView>
             <!-- Price Label -->
             <TextView
-                android:id="@+id/book_item_genre"
+                android:id="@+id/car_item_genre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#5d5d5d"

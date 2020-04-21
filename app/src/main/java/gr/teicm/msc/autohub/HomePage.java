@@ -35,13 +35,14 @@ public class HomePage extends AppCompatActivity {
 
         DataStore.Init(getApplicationContext());
 
-        ArrayAdapter<CharSequence> cartypeAdapter = ArrayAdapter.createFromResource(
+        ArrayAdapter<CharSequence> car_typeAdapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.car_types,
                 android.R.layout.simple_spinner_item
         );
-        cartypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerCarType.setAdapter(cartypeAdapter);
+        car_typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinnerCarType.setAdapter(car_typeAdapter);
 
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +52,6 @@ public class HomePage extends AppCompatActivity {
                 String car = textCar.getText().toString();
                 int filter_car_type = spinnerCarType.getSelectedItemPosition();
 
-                String message = String.format("Brand: %s\nCar: %s\nCar Type: %s", brand, car, filter_car_type);
                 Intent intent = new Intent(HomePage.this, CarList.class);
                 intent.putExtra("AUTHOR", brand);
                 intent.putExtra("TITLE", car);

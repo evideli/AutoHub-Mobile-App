@@ -12,7 +12,7 @@
       "ID": 2,
       "TITLE": "The Little Red Chairs",
       "AUTHOR": "Edna O'Brien",
-      "GENREID": 2,
+      "GENREID": 1,
       "AMAZONURL": "http://www.amazon.co.uk/gp/product/057131628X/ref=s9_qpp_gw_p14_d99_i6?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
       "COVERURL": "http://ecx.images-amazon.com/images/I/51r1ToSAS1L.jpg"
     },
@@ -20,7 +20,7 @@
       "ID": 3,
       "TITLE": "T. S. Eliot The Poems Volume One",
       "AUTHOR": "T. S. Eliot",
-      "GENREID": 13,
+      "GENREID": 11,
       "AMAZONURL": "http://www.amazon.co.uk/gp/product/057123870X/ref=s9_qpp_gw_p14_d99_i12?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
       "COVERURL": "http://ecx.images-amazon.com/images/I/51XoshEXVEL.jpg"
     },
@@ -36,7 +36,7 @@
       "ID": 5,
       "TITLE": "The Noise of Time",
       "AUTHOR": "Julian Barnes",
-      "GENREID": 2,
+      "GENREID": 3,
       "AMAZONURL": "http://www.amazon.co.uk/gp/product/1910702609/ref=s9_qpp_gw_p14_d99_i11?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
       "COVERURL": "http://ecx.images-amazon.com/images/I/51wBPUwJ9ML.jpg"
     },
@@ -44,7 +44,7 @@
       "ID": 6,
       "TITLE": "Sweet Tooth",
       "AUTHOR": "Ian McEwan",
-      "GENREID": 2,
+      "GENREID": 8,
       "AMAZONURL": "http://www.amazon.co.uk/gp/product/0099578786/ref=s9_qpp_gw_p14_d99_i18?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-1&pf_rd_r=1MBS7F7H4FTG0665Q17Q&pf_rd_t=36701&pf_rd_p=577047927&pf_rd_i=desktop",
       "COVERURL": "http://ecx.images-amazon.com/images/I/51VpJUj7QlL.jpg"
     }

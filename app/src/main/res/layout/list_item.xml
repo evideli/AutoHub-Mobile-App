@@ -21,7 +21,7 @@
         android:layout_marginTop="10dp">
         <!-- Name Label -->
         <TextView
-            android:id="@+id/car_item_title"
+            android:id="@+id/car_item_car"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primary_dark"
@@ -31,7 +31,7 @@
             android:paddingBottom="2dip" />
         <!-- Description label -->
         <TextView
-            android:id="@+id/car_item_author"
+            android:id="@+id/car_item_brand"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/secondary_text"
@@ -53,7 +53,7 @@
             </TextView>
             <!-- Price Label -->
             <TextView
-                android:id="@+id/car_item_genre"
+                android:id="@+id/car_item_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#5d5d5d"

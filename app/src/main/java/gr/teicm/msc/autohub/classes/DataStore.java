@@ -14,10 +14,10 @@ import gr.teicm.msc.autohub.R;
 public class DataStore {
     public static String KEY_POSITION = "POSITION";
     public static String KEY_ID = "ID";
-    public static String KEY_TITLE = "TITLE";
-    public static String KEY_AUTHOR = "AUTHOR";
-    public static String KEY_GENREID = "GENREID";
-    public static String KEY_GENRENAME = "GENRENAME";
+    public static String KEY_CAR = "TITLE";
+    public static String KEY_BRAND = "AUTHOR";
+    public static String KEY_TYPE = "GENREID";
+    public static String KEY_TYPENAME = "GENRENAME";
     public static String KEY_AMAZONURL = "AMAZONURL";
     public static String KEY_COVERURL = "COVERURL";
 
@@ -44,22 +44,22 @@ public class DataStore {
         for (int i=0; i<nCars; i++){
             JSONObject jCurCars = jCars.optJSONObject(i);
             int carID = jCurCars.optInt(DataStore.KEY_ID, 0);
-            String carTitle = jCurCars.optString(DataStore.KEY_TITLE);
-            String carAuthor = jCurCars.optString(DataStore.KEY_AUTHOR);
-            int carGenreId = jCurCars.optInt(DataStore.KEY_GENREID, 0);
+            String carName = jCurCars.optString(DataStore.KEY_CAR);
+            String carBrand = jCurCars.optString(DataStore.KEY_BRAND);
+            int carType = jCurCars.optInt(DataStore.KEY_TYPE, 0);
             String carAmazonUrl = jCurCars.optString(DataStore.KEY_AMAZONURL);
             String carCoverUrl = jCurCars.optString(DataStore.KEY_COVERURL);
 
             //get Genre name by ID
-            String carGenreName = DataStore.Genres[carGenreId];
+            String carTypeName = DataStore.Genres[carType];
 
             // hold each book in a HashMap (Associative Array)
             HashMap<String, Object> car = new HashMap<String, Object>();
             car.put(DataStore.KEY_ID, carID);
-            car.put(DataStore.KEY_TITLE, carTitle);
-            car.put(DataStore.KEY_AUTHOR, carAuthor);
-            car.put(DataStore.KEY_GENREID, carGenreId);
-            car.put(DataStore.KEY_GENRENAME, carGenreName);
+            car.put(DataStore.KEY_CAR, carName);
+            car.put(DataStore.KEY_BRAND, carBrand);
+            car.put(DataStore.KEY_TYPE, carType);
+            car.put(DataStore.KEY_TYPENAME, carTypeName);
             car.put(DataStore.KEY_AMAZONURL, carAmazonUrl);
             car.put(DataStore.KEY_COVERURL, carCoverUrl);
 

@@ -20,12 +20,12 @@ public class CarDetails extends AppCompatActivity {
     TextView textViewGenre;
     Button buttonVisitWebsite;
 
-    HashMap<String, Object> book = null;
+    HashMap<String, Object> car = null;
 
     private void findViews() {
-        textViewTitle = (TextView) findViewById(R.id.car_details_title);
-        textViewAuthor = (TextView) findViewById(R.id.car_details_author);
-        textViewGenre = (TextView) findViewById(R.id.car_details_genre);
+        textViewTitle = (TextView) findViewById(R.id.car_details_car);
+        textViewAuthor = (TextView) findViewById(R.id.car_details_brand);
+        textViewGenre = (TextView) findViewById(R.id.car_details_type);
         buttonVisitWebsite = (Button) findViewById(R.id.buttonVisitWebsite);
     }
 
@@ -40,21 +40,21 @@ public class CarDetails extends AppCompatActivity {
         findViews();
 
         Intent intent = getIntent();
-        int bookPosition = intent.getIntExtra(DataStore.KEY_POSITION, 0);
+        int carPosition = intent.getIntExtra(DataStore.KEY_POSITION, 0);
 
-        book = DataStore.Cars.get(bookPosition);
-        String bookTitle = (String) book.get(DataStore.KEY_TITLE);
-        String bookAuthor = (String) book.get(DataStore.KEY_AUTHOR);
-        String bookGenreName = (String) book.get(DataStore.KEY_GENRENAME);
-        textViewTitle.setText(bookTitle);
-        textViewAuthor.setText(bookAuthor);
-        textViewGenre.setText(bookGenreName);
+        car = DataStore.Cars.get(carPosition);
+        String carName = (String) car.get(DataStore.KEY_CAR);
+        String carBrand = (String) car.get(DataStore.KEY_BRAND);
+        String carType = (String) car.get(DataStore.KEY_TYPENAME);
+        textViewTitle.setText(carName);
+        textViewAuthor.setText(carBrand);
+        textViewGenre.setText(carType);
 
         buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String bookAmazonUrl = (String) book.get(DataStore.KEY_AMAZONURL);
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(bookAmazonUrl));
+                String carAmazonUrl = (String) car.get(DataStore.KEY_AMAZONURL);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(carAmazonUrl));
                 startActivity(browserIntent);
             }
         });

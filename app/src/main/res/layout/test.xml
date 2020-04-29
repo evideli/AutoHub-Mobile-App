@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BDBDBD"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="163dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="205dp"
+        android:layout_height="85dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +24,7 @@
         android:layout_height="46dp"
         android:layout_marginTop="60dp"
         android:text="@string/welcome"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFF"
         android:textSize="34sp"
         app:fontFamily="cursive"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,37 +37,30 @@
         android:layout_height="wrap_content"
         android:text="@string/moto"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFF"
         android:textSize="18sp"
         app:fontFamily="cursive"
         app:layout_constraintBottom_toTopOf="@+id/buttonWelcome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <Button
         android:id="@+id/buttonWelcome"
-
-        android:layout_width="138dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="80dp"
-
-        android:background="@drawable/buttonshape1"
-        android:shadowColor="#9E9E9E"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="cursive"
+        android:layout_marginBottom="56dp"
         android:text="Go Now!!"
         android:textAllCaps="false"
-
-        android:textColor="#FFFF"
-        android:textSize="20sp"
-
-        app:fontFamily="cursive"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_light"
+        android:textColorHint="@color/primary_light"
+        android:textColorLink="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

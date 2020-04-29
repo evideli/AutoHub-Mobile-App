@@ -50,14 +50,14 @@ public class CarDetails extends AppCompatActivity {
         textViewAuthor.setText(carBrand);
         textViewGenre.setText(carType);
 
-        buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String carAmazonUrl = (String) car.get(DataStore.KEY_AMAZONURL);
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(carAmazonUrl));
-                startActivity(browserIntent);
-            }
-        });
+    //    buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
+     //       @Override
+     //       public void onClick(View v) {
+     //           String carAmazonUrl = (String) car.get(DataStore.KEY_COVER1URL);
+     //           Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(carAmazonUrl));
+      //          startActivity(browserIntent);
+     //       }
+      //  });
     }
 
 }

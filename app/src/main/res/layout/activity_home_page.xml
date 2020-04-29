@@ -96,11 +96,17 @@
 
     <Button
         android:id="@+id/buttonSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/search_button"
-        android:textColor="#ffff"
+
+
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape2"
+
+        android:text="Search!"
+        android:textColor="#000000"
+        android:textSize="22sp"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.495"

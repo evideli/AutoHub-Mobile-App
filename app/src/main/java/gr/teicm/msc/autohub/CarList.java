@@ -31,13 +31,13 @@ public class CarList extends AppCompatActivity {
 
         //get user filters from Intent
         Intent intent = getIntent();
-        String filterAuthor = intent.getStringExtra("AUTHOR");
-        String filterTitle = intent.getStringExtra("TITLE");
-        int filterGenreId = intent.getIntExtra("GENREID", 0);
+        String filterBrand = intent.getStringExtra("brand");
+        String filterTitle = intent.getStringExtra("title");
+        int filterCar_Type = intent.getIntExtra("car_type", 0);
 
         findViews();
 
-        DataStore.LoadCars(filterTitle, filterAuthor, filterGenreId);
+        DataStore.LoadCars(filterTitle , filterBrand , filterCar_Type);
 
         //COMPLEX OBJECT BINDING
         ListAdapter carsAdapter = new SimpleAdapter(

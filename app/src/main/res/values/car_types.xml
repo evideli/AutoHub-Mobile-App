@@ -2,18 +2,12 @@
 <resources>
     <string-array name="car_types">
         <item>(all)</item>
-        <item>Science Fiction</item>
-        <item>Fiction</item>
-        <item>Horror</item>
-        <item>Fantasy</item>
-        <item>Politics</item>
-        <item>Science</item>
-        <item>Children</item>
-        <item>Philosophy</item>
-        <item>Ancient Greece</item>
-        <item>Ancient Egypt</item>
-        <item>Middle Ages</item>
-        <item>Classical Literature</item>
-        <item>Poetry</item>
+        <item>SubCompact</item>
+        <item>Compact</item>
+        <item>Mid-Size</item>
+        <item>Compact SUV</item>
+        <item>Mid-Size SUV</item>
+        <item>Mini SUV</item>
+        <item> Limousine</item>
     </string-array>
 </resources>

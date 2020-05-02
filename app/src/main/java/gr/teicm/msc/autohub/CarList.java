@@ -45,8 +45,8 @@ public class CarList extends AppCompatActivity {
                 this,
                 DataStore.Cars,
                 R.layout.list_item,
-                new String[]{DataStore.KEY_CAR, DataStore.KEY_BRANDNAME, DataStore.KEY_TYPENAME},
-                new int[]{R.id.car_item_car, R.id.car_item_brand, R.id.car_item_type}
+                new String[]{DataStore.KEY_CAR,DataStore.KEY_PRICE ,DataStore.KEY_BRANDNAME, DataStore.KEY_TYPENAME},
+                new int[]{R.id.car_item_car,R.id.car_item_price, R.id.car_item_brand, R.id.car_item_type}
         );
         mListCars.setAdapter(carsAdapter);
 

@@ -30,9 +30,10 @@ public class CarList extends AppCompatActivity {
 
 
         //get user filters from Intent
+
         Intent intent = getIntent();
-        String filterBrand = intent.getStringExtra("brand");
         String filterTitle = intent.getStringExtra("title");
+        int filterBrand = intent.getIntExtra("brand", 0);
         int filterCar_Type = intent.getIntExtra("car_type", 0);
 
         findViews();
@@ -44,7 +45,7 @@ public class CarList extends AppCompatActivity {
                 this,
                 DataStore.Cars,
                 R.layout.list_item,
-                new String[]{DataStore.KEY_CAR, DataStore.KEY_BRAND, DataStore.KEY_TYPENAME},
+                new String[]{DataStore.KEY_CAR, DataStore.KEY_BRANDNAME, DataStore.KEY_TYPENAME},
                 new int[]{R.id.car_item_car, R.id.car_item_brand, R.id.car_item_type}
         );
         mListCars.setAdapter(carsAdapter);

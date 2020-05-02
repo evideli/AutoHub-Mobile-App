@@ -5,9 +5,9 @@
         <item>SubCompact</item>
         <item>Compact</item>
         <item>Mid-Size</item>
+        <item>Mini SUV</item>
         <item>Compact SUV</item>
         <item>Mid-Size SUV</item>
-        <item>Mini SUV</item>
         <item> Limousine</item>
     </string-array>
 </resources>

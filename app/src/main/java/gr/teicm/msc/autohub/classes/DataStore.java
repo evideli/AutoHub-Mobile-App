@@ -17,10 +17,20 @@ public class DataStore {
     public static String KEY_ID = "id";
     public static String KEY_CAR = "title";
     public static String KEY_BRAND = "brand";
+    public static String KEY_BRANDNAME = "brand_name";
     public static String KEY_TYPE = "car_type";
-    public static String KEY_TYPENAME = "car_typeName";
+    public static String KEY_TYPENAME = "car_type_name";
+
+    public static String KEY_FUEL = "fuel";
+    public static String KEY_TRANSMISSON = "transmission";
+    public static String KEY_YEAR = "year";
+    public static String KEY_COUNTRY = "country";
+    public static String KEY_PRICE = "price";
+    public static String KEY_DESCRIPTION = "description";
+
     public static String KEY_COVERURL = "cover";
     public static String KEY_COVER1URL = "cover1";
+    public static String KEY_VIDEO = "video";
 
 
     public static Context AppContext = null;
@@ -34,11 +44,15 @@ public class DataStore {
         Types = AppResources.getStringArray(R.array.car_types);
     }
 
-    public static void LoadCars(String filterBrand, String filterTitle, int filterCar_Type) {
+    public static void LoadCars(String filterTitle, int filterBrand, int filterCar_Type) {
         DataStore.Cars.clear();
+
         String contents = AssetsUtils.getFileContentsFromAssets(AppContext, "cars.json");
-        //@SuppressLint("DefaultLocale") String urlString = String.format(" http://127.0.0.1:8000/cars/?title=%s&brand=%s&car_type=%d", filterTitle, filterBrand, filterCar_Type);
+
+
+        //String urlString = String.format(" http://127.0.0.1:8000/cars/?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
         //String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
+
         JSONObject json = JsonParser.getJsonObject(contents);
         JSONArray jCars = json.optJSONArray("Cars");
         if (jCars == null) return;
@@ -47,21 +61,46 @@ public class DataStore {
             JSONObject jCurCars = jCars.optJSONObject(i);
             int carID = jCurCars.optInt(DataStore.KEY_ID, 0);
             String carTitle = jCurCars.optString(DataStore.KEY_CAR);
-            String carBrand = jCurCars.optString(DataStore.KEY_BRAND);
+
+            int carBrand = jCurCars.optInt(DataStore.KEY_BRAND);
+            String carBrandName = jCurCars.optString(DataStore.KEY_BRANDNAME);
+
             int carType = jCurCars.optInt(DataStore.KEY_TYPE, 0);
+            String carTypeName = jCurCars.optString(DataStore.KEY_TYPENAME);
+
+            String carFuel = jCurCars.optString(DataStore.KEY_FUEL);
+            String carTransmission = jCurCars.optString(DataStore.KEY_TRANSMISSON);
+            String carYear = jCurCars.optString(DataStore.KEY_YEAR);
+            String carCountry = jCurCars.optString(DataStore.KEY_COUNTRY);
+            String carPrice = jCurCars.optString(DataStore.KEY_PRICE);
+            String carDescription = jCurCars.optString(DataStore.KEY_DESCRIPTION);
+
             String carCover1Url = jCurCars.optString(DataStore.KEY_COVER1URL);
             String carCoverUrl = jCurCars.optString(DataStore.KEY_COVERURL);
+            String carVideo = jCurCars.optString(DataStore.KEY_VIDEO);
 
-            String carTypeName = DataStore.Types[carType];
+
 
             HashMap<String, Object> car = new HashMap<String, Object>();
             car.put(DataStore.KEY_ID, carID);
             car.put(DataStore.KEY_CAR, carTitle);
             car.put(DataStore.KEY_BRAND, carBrand);
+            car.put(DataStore.KEY_BRANDNAME, carBrandName);
             car.put(DataStore.KEY_TYPE, carType);
             car.put(DataStore.KEY_TYPENAME, carTypeName);
+
+            car.put(DataStore.KEY_FUEL, carFuel);
+            car.put(DataStore.KEY_TRANSMISSON, carTransmission);
+            car.put(DataStore.KEY_YEAR, carYear);
+            car.put(DataStore.KEY_COUNTRY, carCountry);
+            car.put(DataStore.KEY_PRICE, carPrice);
+            car.put(DataStore.KEY_DESCRIPTION, carDescription);
+
+
             car.put(DataStore.KEY_COVER1URL, carCover1Url);
             car.put(DataStore.KEY_COVERURL, carCoverUrl);
+            car.put(DataStore.KEY_VIDEO, carVideo);
+
 
             DataStore.Cars.add(car);
         }

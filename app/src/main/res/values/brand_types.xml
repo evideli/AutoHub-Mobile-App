@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brand_types">
+        <item>(all)</item>
+        <item>Alfa Romeo</item>
+        <item>BMW</item>
+        <item>Hyundai</item>
+        <item>Kia</item>
+        <item>Maserati</item>
+        <item>Mercedes </item>
+        <item>Opel</item>
+        <item>Peugeot</item>
+        <item>Seat</item>
+    </string-array>
+</resources>

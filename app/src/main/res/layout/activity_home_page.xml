@@ -59,8 +59,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editTextCar" />
 
-    <EditText
-        android:id="@+id/editTextBrand"
+    <Spinner
+        android:id="@+id/spinner_Brand"
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:ems="10"
@@ -79,7 +79,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBrand" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Brand" />
 
     <Spinner
         android:id="@+id/action_bar_spinnerCarType"

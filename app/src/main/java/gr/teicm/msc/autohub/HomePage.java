@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +21,7 @@ import gr.teicm.msc.autohub.classes.DataStore;
 
 public class HomePage extends AppCompatActivity {
 
-    private EditText textBrand;
+    private Spinner spinnerBrand;
     private EditText textCar;
     private Spinner spinnerCarType;
 
@@ -28,12 +29,22 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        textBrand = (EditText) findViewById(R.id.editTextBrand);
+        spinnerBrand = (Spinner) findViewById(R.id.spinner_Brand);
         textCar = (EditText) findViewById(R.id.editTextCar);
         spinnerCarType = (Spinner) findViewById(R.id.action_bar_spinnerCarType);
         Button buttonSearch = (Button) findViewById(R.id.buttonSearch);
 
         DataStore.Init(getApplicationContext());
+
+        ArrayAdapter<CharSequence> brandAdapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.brand_types,
+                android.R.layout.simple_spinner_item
+        );
+        brandAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinnerBrand.setAdapter(brandAdapter);
+
 
         ArrayAdapter<CharSequence> car_typeAdapter = ArrayAdapter.createFromResource(
                 this,
@@ -48,8 +59,8 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String brand = textBrand.getText().toString();
                 String car = textCar.getText().toString();
+                int brand = spinnerBrand.getSelectedItemPosition();
                 int filter_car_type = spinnerCarType.getSelectedItemPosition();
 
                 Intent intent = new Intent(HomePage.this, CarList.class);

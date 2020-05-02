@@ -56,7 +56,7 @@ public class LazyAdapter extends BaseAdapter {
         // Setting all values in listview
         name.setText((String)car.get(DataStore.KEY_CAR));
         brand.setText((String)car.get(DataStore.KEY_BRAND));
-        type_car.setText((String)car.get(DataStore.KEY_TYPENAME));
+        type_car.setText((String)car.get(DataStore.KEY_TYPE));
         //imageLoader.DisplayImage((String)book.get(DataStore.KEY_COVERURL), thumb_image);
         return vi;
     }

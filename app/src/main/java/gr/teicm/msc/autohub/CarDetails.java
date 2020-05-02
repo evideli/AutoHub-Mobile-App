@@ -44,20 +44,20 @@ public class CarDetails extends AppCompatActivity {
 
         car = DataStore.Cars.get(carPosition);
         String carName = (String) car.get(DataStore.KEY_CAR);
-        String carBrand = (String) car.get(DataStore.KEY_BRAND);
+        String carBrand = (String) car.get(DataStore.KEY_BRANDNAME);
         String carType = (String) car.get(DataStore.KEY_TYPENAME);
         textViewTitle.setText(carName);
         textViewAuthor.setText(carBrand);
         textViewGenre.setText(carType);
 
-    //    buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
-     //       @Override
-     //       public void onClick(View v) {
-     //           String carAmazonUrl = (String) car.get(DataStore.KEY_COVER1URL);
-     //           Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(carAmazonUrl));
-      //          startActivity(browserIntent);
-     //       }
-      //  });
+        buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String carVideo = (String) car.get(DataStore.KEY_VIDEO);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(carVideo));
+                startActivity(browserIntent);
+            }
+        });
     }
 
 }

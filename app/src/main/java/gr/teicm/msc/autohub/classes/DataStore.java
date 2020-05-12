@@ -3,6 +3,7 @@ package gr.teicm.msc.autohub.classes;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -38,7 +39,7 @@ public class DataStore {
     public static String[] Types = null;
     public static ArrayList<HashMap<String, Object>> Cars = new ArrayList<HashMap<String, Object>>();
 
-    public static void Init(Context context){
+    public static void Init(Context context) {
         AppContext = context;
         AppResources = AppContext.getResources();
         Types = AppResources.getStringArray(R.array.car_types);
@@ -47,17 +48,25 @@ public class DataStore {
     public static void LoadCars(String filterTitle, int filterBrand, int filterCar_Type) {
         DataStore.Cars.clear();
 
-        String contents = AssetsUtils.getFileContentsFromAssets(AppContext, "cars.json");
+        //String contents = AssetsUtils.getFileContentsFromAssets(AppContext, "cars.json");
 
 
-        //String urlString = String.format(" http://127.0.0.1:8000/cars/?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
-        //String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
+        String urlString = String.format("http://www.mocky.io/v2/5eb414450e00002e420818dc?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
+        String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
+
+        // Added a name to the jsonArray returned from the Django REST API
+        // so that JsonParser works
+        contents = "{\"Cars\":" + contents + "}";
+
+        //
 
         JSONObject json = JsonParser.getJsonObject(contents);
         JSONArray jCars = json.optJSONArray("Cars");
+
+
         if (jCars == null) return;
         int nCars = jCars.length();
-        for (int i=0; i<nCars; i++){
+        for (int i = 0; i < nCars; i++) {
             JSONObject jCurCars = jCars.optJSONObject(i);
             int carID = jCurCars.optInt(DataStore.KEY_ID, 0);
             String carTitle = jCurCars.optString(DataStore.KEY_CAR);
@@ -78,7 +87,6 @@ public class DataStore {
             String carCover1Url = jCurCars.optString(DataStore.KEY_COVER1URL);
             String carCoverUrl = jCurCars.optString(DataStore.KEY_COVERURL);
             String carVideo = jCurCars.optString(DataStore.KEY_VIDEO);
-
 
 
             HashMap<String, Object> car = new HashMap<String, Object>();

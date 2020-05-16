@@ -51,7 +51,7 @@ public class DataStore {
         //String contents = AssetsUtils.getFileContentsFromAssets(AppContext, "cars.json");
 
 
-        String urlString = String.format("http://www.mocky.io/v2/5eb414450e00002e420818dc?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
+        @SuppressLint("DefaultLocale") String urlString = String.format("http://evideli92.pythonanywhere.com/cars/?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
         String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
 
         // Added a name to the jsonArray returned from the Django REST API

@@ -1,9 +1,7 @@
 package gr.teicm.msc.autohub.classes;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -45,13 +43,23 @@ public class DataStore {
         Types = AppResources.getStringArray(R.array.car_types);
     }
 
-    public static void LoadCars(String filterTitle, int filterBrand, int filterCar_Type) {
+    public static void LoadCars(String filterTitle, int filterBrand, int filterCarType) {
         DataStore.Cars.clear();
 
-        //String contents = AssetsUtils.getFileContentsFromAssets(AppContext, "cars.json");
+        // Convert the Brand and CarType filters to String and handle the case of 0
+        String filterBrandStr = String.valueOf(filterBrand);
+        String filterCarTypeStr = String.valueOf(filterCarType);
 
+        if (filterBrandStr.equals("0")) {
+            filterBrandStr = "";
+        }
 
-        @SuppressLint("DefaultLocale") String urlString = String.format("http://evideli92.pythonanywhere.com/cars/?title=%s&brand=%d&car_type=%d", filterTitle, filterBrand, filterCar_Type);
+        if (filterCarTypeStr.equals("0")) {
+            filterCarTypeStr = "";
+        }
+
+        String urlString = "http://evideli92.pythonanywhere.com/cars/?title=" + filterTitle + "&brand=" + filterBrandStr + "&car_type=" + filterCarTypeStr;
+
         String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
 
         // Added a name to the jsonArray returned from the Django REST API

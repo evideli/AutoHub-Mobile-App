@@ -64,9 +64,9 @@ public class HomePage extends AppCompatActivity {
                 int filter_car_type = spinnerCarType.getSelectedItemPosition();
 
                 Intent intent = new Intent(HomePage.this, CarList.class);
-                intent.putExtra("AUTHOR", brand);
-                intent.putExtra("TITLE", car);
-                intent.putExtra("GENREID", filter_car_type);
+                intent.putExtra("brand", brand);
+                intent.putExtra("title", car);
+                intent.putExtra("car_type", filter_car_type);
                 startActivity(intent);
             }
         });

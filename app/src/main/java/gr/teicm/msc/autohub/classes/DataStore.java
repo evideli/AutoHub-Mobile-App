@@ -60,7 +60,7 @@ public class DataStore {
 
         String urlString = "http://evideli92.pythonanywhere.com/cars/?title=" + filterTitle + "&brand=" + filterBrandStr + "&car_type=" + filterCarTypeStr;
 
-        String contents = NetworkUtils.getFileContentsFromFromUrl(urlString);
+        String contents = NetworkUtils.getFileContentsFromUrl(urlString);
 
         // Added a name to the jsonArray returned from the Django REST API
         // so that JsonParser works

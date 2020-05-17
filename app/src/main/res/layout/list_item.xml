@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/car_item_cover"
         android:layout_width="186dp"
         android:layout_height="match_parent"
         android:src="@drawable/no_image" />

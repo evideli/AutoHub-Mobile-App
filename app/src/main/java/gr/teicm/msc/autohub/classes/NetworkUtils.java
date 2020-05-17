@@ -12,7 +12,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class NetworkUtils {
-    public static String getFileContentsFromFromUrl(String address) {
+    public static String getFileContentsFromUrl(String address) {
         //
         //Necessary in order to be able to execute Network Calls on main Thread
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();

@@ -18,14 +18,14 @@ public class LazyAdapter extends BaseAdapter {
 
     private Activity activity;
     private ArrayList<HashMap<String, Object>> data;
-    private static LayoutInflater inflater=null;
+    private static LayoutInflater inflater = null;
     public ImageLoader imageLoader;
 
     public LazyAdapter(Activity a, ArrayList<HashMap<String, Object>> d) {
         activity = a;
-        data=d;
-        inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        imageLoader=new ImageLoader(activity.getApplicationContext());
+        data = d;
+        inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        imageLoader = new ImageLoader(activity.getApplicationContext());
     }
 
     public int getCount() {
@@ -41,23 +41,25 @@ public class LazyAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        View vi=convertView;
-        if(convertView==null)
+        View vi = convertView;
+        if (convertView == null)
             vi = inflater.inflate(R.layout.list_item, null);
 
-        TextView name = (TextView)vi.findViewById(R.id.car_item_car);
-        TextView brand = (TextView)vi.findViewById(R.id.car_item_brand);
-        TextView type_car = (TextView)vi.findViewById(R.id.car_item_type);
-        //ImageView thumb_image=(ImageView)vi.findViewById(R.id.car_item_cover);
+        TextView name = (TextView) vi.findViewById(R.id.car_item_car);
+        TextView brand = (TextView) vi.findViewById(R.id.car_item_brand);
+        TextView price = (TextView) vi.findViewById(R.id.car_item_price);
+        TextView type_car = (TextView) vi.findViewById(R.id.car_item_type);
+        ImageView thumb_image = (ImageView) vi.findViewById(R.id.car_item_cover);
 
         HashMap<String, Object> car = new HashMap<String, Object>();
         car = data.get(position);
 
         // Setting all values in listview
-        name.setText((String)car.get(DataStore.KEY_CAR));
-        brand.setText((String)car.get(DataStore.KEY_BRAND));
-        type_car.setText((String)car.get(DataStore.KEY_TYPE));
-        //imageLoader.DisplayImage((String)book.get(DataStore.KEY_COVERURL), thumb_image);
+        name.setText((String) car.get(DataStore.KEY_CAR));
+        brand.setText((String) car.get(DataStore.KEY_BRANDNAME));
+        price.setText((String) car.get(DataStore.KEY_PRICE));
+        type_car.setText((String) car.get(DataStore.KEY_TYPENAME));
+        imageLoader.DisplayImage((String) car.get(DataStore.KEY_COVERURL), thumb_image);
         return vi;
     }
 }

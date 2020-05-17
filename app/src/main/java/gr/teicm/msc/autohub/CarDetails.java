@@ -1,17 +1,19 @@
 package gr.teicm.msc.autohub;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
 import gr.teicm.msc.autohub.classes.DataStore;
+import gr.teicm.msc.autohub.classes.ImageLoader;
 
 public class CarDetails extends AppCompatActivity {
 
@@ -19,6 +21,8 @@ public class CarDetails extends AppCompatActivity {
     TextView textViewAuthor;
     TextView textViewGenre;
     Button buttonVisitWebsite;
+    ImageView imageViewCover;
+    ImageLoader imageLoader;
 
     HashMap<String, Object> car = null;
 
@@ -27,6 +31,7 @@ public class CarDetails extends AppCompatActivity {
         textViewAuthor = (TextView) findViewById(R.id.car_details_brand);
         textViewGenre = (TextView) findViewById(R.id.car_details_type);
         buttonVisitWebsite = (Button) findViewById(R.id.buttonVisitWebsite);
+        imageViewCover = (ImageView) findViewById(R.id.imageViewCover);
     }
 
     @Override
@@ -46,9 +51,12 @@ public class CarDetails extends AppCompatActivity {
         String carName = (String) car.get(DataStore.KEY_CAR);
         String carBrand = (String) car.get(DataStore.KEY_BRANDNAME);
         String carType = (String) car.get(DataStore.KEY_TYPENAME);
+        String carCoverUrl = (String) car.get(DataStore.KEY_COVERURL);
         textViewTitle.setText(carName);
         textViewAuthor.setText(carBrand);
         textViewGenre.setText(carType);
+        imageLoader = new ImageLoader(this);
+        imageLoader.DisplayImage(carCoverUrl, imageViewCover);
 
         buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
             @Override

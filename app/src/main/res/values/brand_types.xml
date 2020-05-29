@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="brand_types">
-        <item>(all)</item>
+        <item>-- All --</item>
         <item>Alfa Romeo</item>
         <item>BMW</item>
         <item>Hyundai</item>

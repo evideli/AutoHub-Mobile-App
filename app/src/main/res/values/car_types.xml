@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="car_types">
-        <item>(all)</item>
+        <item>-- All --</item>
         <item>SubCompact</item>
         <item>Compact</item>
         <item>Mid-Size</item>

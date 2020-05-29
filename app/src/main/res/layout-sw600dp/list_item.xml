@@ -9,37 +9,40 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:elevation="10dp"
         app:cardBackgroundColor="@color/colorPrimaryLight"
         app:cardCornerRadius="8dp">
 
         <ImageView
             android:id="@+id/car_item_cover"
-            android:layout_width="144dp"
-            android:layout_height="100dp"
+            android:layout_width="232dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/no_image" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/car_item_car"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="156dp"
+                android:layout_marginLeft="242dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/ubuntu_bold"
                 android:textColor="@color/colorSecondary"
-                android:textSize="16sp" />
+                android:textSize="28sp" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="158dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="242dp"
+                android:layout_marginTop="44dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -48,7 +51,8 @@
                     android:fontFamily="@font/ubuntu_medium"
                     android:gravity="start"
                     android:text="@string/carlistItemPrice"
-                    android:textColor="@color/colorSecondary" />
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/car_item_price"
@@ -59,13 +63,14 @@
                     android:paddingRight="12dp"
                     android:paddingBottom="2dp"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/colorSecondaryDarkText" />
+                    android:textColor="@color/colorSecondaryDarkText"
+                    android:textSize="24dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="158dp"
+                android:layout_marginLeft="242dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -74,7 +79,8 @@
                     android:fontFamily="@font/ubuntu_medium"
                     android:gravity="start"
                     android:text="@string/carlistItemBrand"
-                    android:textColor="@color/colorSecondary" />
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/car_item_brand"
@@ -85,13 +91,14 @@
                     android:paddingRight="12dp"
                     android:paddingBottom="2dp"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/colorSecondaryDarkText" />
+                    android:textColor="@color/colorSecondaryDarkText"
+                    android:textSize="24dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="158dp"
+                android:layout_marginLeft="242dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -100,7 +107,8 @@
                     android:fontFamily="@font/ubuntu_medium"
                     android:gravity="start"
                     android:text="@string/carlistItemType"
-                    android:textColor="@color/colorSecondary" />
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/car_item_type"
@@ -110,7 +118,8 @@
                     android:fontFamily="@font/ubuntu_regular"
                     android:paddingRight="12dp"
                     android:textAlignment="textEnd"
-                    android:textColor="@color/colorSecondaryDarkText" />
+                    android:textColor="@color/colorSecondaryDarkText"
+                    android:textSize="24dp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

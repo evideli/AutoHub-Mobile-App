@@ -13,16 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CarDetails" />
-        <activity android:name=".HomePage" />
-        <activity android:name=".CarList" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".CarDetails"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".HomePage"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".CarList"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -18,13 +18,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="18dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/ubuntu_bold"
             android:text="@string/carlistTitle"
             android:textAllCaps="false"
             android:textColor="@color/colorSecondary"
-            android:textSize="24sp" />
+            android:textSize="34sp" />
 
         <View
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
 
     <ListView
         android:id="@+id/listViewCars"
-        android:layout_width="380dp"
+        android:layout_width="740dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:divider="@color/white" />

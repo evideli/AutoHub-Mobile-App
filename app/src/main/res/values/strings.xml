@@ -1,11 +1,22 @@
 <resources>
     <string name="app_name">AutoHub</string>
-    <string name="label_brand">Brand</string>
+    <string name="label_brand">Choose Brand</string>
     <string name="label_car">Car</string>
-    <string name="type_car">Select Car Type</string>
-    <string name="search_button">Search!</string>
+    <string name="type_car">Choose Car Type</string>
+    <string name="search_button">Search Now</string>
     <string name="about">About...</string>
-    <string name="moto">It\'s about time to get a new perspective on Cars.</string>
-    <string name="welcome">Welcome to Autohub</string>
-
+    <string name="moto">It\'s about time to get a new perspective on cars</string>
+    <string name="welcome">Welcome to AutoHub</string>
+    <string name="welcomeButton">Get Started</string>
+    <string name="homepageMoto">Check out our catalog and find out what suits your needs!</string>
+    <string name="carlistTitle">Featured Cars</string>
+    <string name="carlistItemPrice">Price:</string>
+    <string name="carlistItemBrand">Brand:</string>
+    <string name="carlistItemType">Car Type:</string>
+    <string name="carDetailsModel">Manufacturer:</string>
+    <string name="carDetailsTransmission">Transmission Type:</string>
+    <string name="carDetailsFuelType">Fuel Type:</string>
+    <string name="carDetailsYear">Year of Production:</string>
+    <string name="carDetailsButton">Visit Website</string>
+    <string name="carDetailsDescription">Description</string>
 </resources>

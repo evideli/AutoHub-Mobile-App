@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="6" />
+        android:layout_weight="5.8" />
 
     <TextView
         android:id="@+id/textView"
@@ -25,26 +25,26 @@
         android:text="@string/homepageMoto"
         android:textAlignment="center"
         android:textColor="@color/colorSecondary"
-        android:textSize="22sp" />
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textCar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="110dp"
+        android:layout_marginRight="156dp"
         android:layout_weight="0.1"
         android:fontFamily="@font/ubuntu_medium"
         android:text="@string/label_car"
         android:textColor="@color/colorSecondary"
-        android:textSize="18sp" />
+        android:textSize="26sp" />
 
     <EditText
         android:id="@+id/editTextCar"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="14dp"
         android:layout_weight="0.01"
         android:ems="10"
         android:fontFamily="@font/ubuntu_light"
@@ -58,20 +58,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="66dp"
+        android:layout_marginRight="90dp"
         android:layout_weight="0.2"
         android:fontFamily="@font/ubuntu_medium"
         android:text="@string/label_brand"
         android:textAlignment="center"
         android:textColor="@color/colorSecondary"
-        android:textSize="18sp" />
+        android:textSize="26sp" />
 
     <Spinner
         android:id="@+id/spinner_Brand"
-        android:layout_width="262dp"
+        android:layout_width="362dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="12dp"
         android:layout_weight="0.1"
         android:fontFamily="@font/ubuntu_light" />
 
@@ -80,17 +80,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="54dp"
+        android:layout_marginRight="73dp"
         android:layout_weight="0.2"
         android:fontFamily="@font/ubuntu_medium"
         android:text="@string/type_car"
         android:textAlignment="center"
         android:textColor="@color/colorSecondary"
-        android:textSize="18sp" />
+        android:textSize="26sp" />
 
     <Spinner
         android:id="@+id/action_bar_spinnerCarType"
-        android:layout_width="262dp"
+        android:layout_width="362dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.1"
@@ -103,13 +103,13 @@
 
     <Button
         android:id="@+id/buttonSearch"
-        android:layout_width="182dp"
-        android:layout_height="32dp"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.1"
         android:background="@drawable/buttonshape2"
         android:fontFamily="@font/ubuntu_bold"
         android:text="@string/search_button"
         android:textColor="@color/colorSecondary"
-        android:textSize="20sp" />
+        android:textSize="28sp" />
 </LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECEC"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/car_details_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="@string/carlistItemBrand"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewCover"
+                    android:layout_width="280dp"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_image" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carDetailsModel"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="Mercedes GLC"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carlistItemType"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="Compact SUV"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carDetailsYear"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="2019"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carlistItemPrice"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="32.000$"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carDetailsFuelType"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_fuel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="Petrol"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="start"
+                        android:text="@string/carDetailsTransmission"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/car_details_transmission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="2dp"
+                        android:text="Automatic"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryDarkText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="@string/carDetailsDescription"
+                    android:textColor="@color/colorSecondaryDarkText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/car_details_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:text="@string/carDetailsDescription"
+                    android:textColor="@color/colorSecondaryDarkText"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonVisitWebsite"
+                    android:layout_width="182dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/buttonshape2"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="@string/carDetailsButton"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

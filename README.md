@@ -13,10 +13,10 @@ A native Android mobile app written in Android Studio using Java for retrieving 
 ## Screenshots
 
 <p float="left">
-  <img height=500px src="github-screenshots/screen1.jpg" title="Home Screen">
-  <img height=500px src="github-screenshots/screen2.jpg" title="Search Cars Screen">
-  <img height=500px src="github-screenshots/screen3.jpg" title="List Cars Screen">
-  <img height=500px src="github-screenshots/screen4.jpg" title="Car Details Screen">
+  <img height=400px src="github-screenshots/screen1.jpg" title="Home Screen">
+  <img height=400px src="github-screenshots/screen2.jpg" title="Search Cars Screen">
+  <img height=400px src="github-screenshots/screen3.jpg" title="List Cars Screen">
+  <img height=400px src="github-screenshots/screen4.jpg" title="Car Details Screen">
 </p>
 
 ## Author
